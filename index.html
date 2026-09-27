@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="StudentKit - free student tools for attendance, CGPA, budgeting, planning and resumes.">
+<title>StudentKit — Smart Tools for Students</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home">🎒 StudentKit</a>
+  <nav><a href="#tools">Tools</a><a href="#about">About</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div>
+    <span class="pill">✨ Free student toolkit</span>
+    <h1>Study smarter.<br><span>Plan better.</span></h1>
+    <p>Simple, colorful tools for college students — attendance, CGPA, study planning, budgeting and resumes.</p>
+    <a class="btn" href="#tools">Explore tools ↓</a>
+  </div>
+  <div class="hero-card">
+    <div class="orb">🎓</div>
+    <h3>Everything students need</h3>
+    <p>Quick calculators and planners in one place.</p>
+  </div>
+</section>
+<section id="tools" class="section">
+  <div class="section-head"><div><span class="eyebrow">YOUR TOOLBOX</span><h2>Pick a tool</h2></div></div>
+  <div class="grid">
+    <article class="card pink"><div class="icon">📊</div><h3>Attendance</h3><p>Find your current percentage and classes needed to reach your target.</p><button onclick="openTool('attendance')">Open tool →</button></article>
+    <article class="card blue"><div class="icon">🎓</div><h3>CGPA</h3><p>Calculate your semester or overall CGPA using credits and grades.</p><button onclick="openTool('cgpa')">Open tool →</button></article>
+    <article class="card yellow"><div class="icon">📅</div><h3>Study Planner</h3><p>Create a simple daily study plan from your available hours.</p><button onclick="openTool('planner')">Open tool →</button></article>
+    <article class="card green"><div class="icon">💰</div><h3>Budget</h3><p>Track monthly student spending and see what remains.</p><button onclick="openTool('budget')">Open tool →</button></article>
+    <article class="card purple"><div class="icon">📄</div><h3>Resume Builder</h3><p>Generate a clean one-page resume from a few details.</p><button onclick="openTool('resume')">Open tool →</button></article>
+  </div>
+</section>
+<section id="about" class="about">
+  <span class="eyebrow">ABOUT STUDENTKIT</span>
+  <h2>Useful first. Monetization later.</h2>
+  <p>StudentKit is designed to attract students with genuinely useful free tools. Once traffic grows, the site can be monetized with suitable advertising, affiliate links and digital products.</p>
+</section>
+</main>
+<div id="modal" class="modal hidden" onclick="closeIfBackdrop(event)">
+  <div class="modal-box">
+    <button class="close" onclick="closeTool()">×</button>
+    <div id="toolContent"></div>
+  </div>
+</div>
+<footer>© 2026 StudentKit · Built for students</footer>
+<script src="script.js"></script>
+</body>
+</html>
